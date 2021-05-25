@@ -29,30 +29,95 @@
 				<h1 class="login__h1">Happening now</h1>
 				<h3 class="login__h3">Join Twitter today.</h3>
 				<div class="login__Btn">
-					<button class="Btn-login__signup">Sign up</button>
+					<button
+						class="Btn-login__signup"
+						onclick="document.getElementById('id01').style.display='block'"
+						style="width: auto"
+					>
+						Sign up
+					</button>
 				</div>
+
+				<div id="id01" class="modal">
+					<span
+						onclick="document.getElementById('id01').style.display='none'"
+						class="close"
+						title="Close Modal"
+						>&times;</span
+					>
+
+					<form class="modal-content" action="/action_page.php">
+						<div class="container">
+							<h3>Create your account</h3>
+							<hr />
+							<!-- <label for="email"><b>Email</b></label> -->
+							<input
+								type="text"
+								placeholder="Enter Email"
+								name="email"
+								required
+							/>
+							<input
+								type="text"
+								placeholder="Name"
+								name="text"
+								required
+							/>
+							<div>
+								<label for="cars">Choose a car:</label>
+							<select id="cars" name="cars">
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+							</div>
+							<label for="cars">Choose a car:</label>
+							<select id="cars" name="cars">
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+							<div class="clearfix">
+								<button type="submit" class="signupbtn">Sign Up</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
 				<div class="login__Btn">
 					<button class="Btn-login__login">Log in</button>
 				</div>
 			</div>
 		</div>
 		<footer>
-			<a href="">About</a>
-			<a href="">Help Center</a>
-			<a href="">Terms of Service</a>
-			<a href=""> Privacy Policy</a>
-			<a href="">Cookie Policy</a>
-			<a href="">Ads info</a>
-			<a href="">blog</a>
-			<a href="">Status</a>
-			<a href="">Careers</a>
+			<a href="https://about.twitter.com/">About</a>
+			<a href="https://help.twitter.com/en">Help Center</a>
+			<a href="https://twitter.com/en/tos">Terms of Service</a>
+			<a href="https://twitter.com/en/privacy"> Privacy Policy</a>
+			<a
+				href="https://help.twitter.com/en/rules-and-policies/twitter-cookies"
+				>Cookie Policy</a
+			>
+			<a
+				href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html"
+				>Ads info</a
+			>
+			<a href="https://blog.twitter.com/">blog</a>
+			<a href="https://status.twitterstat.us/">Status</a>
+			<a href="https://careers.twitter.com/">Careers</a>
 			<a href="">Brand resources</a>
-			<a href=""> Advertising</a>
-			<a href="">Marketing</a>
+			<a href="https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise">
+				Advertising</a
+			>
+			<a href="https://marketing.twitter.com/en">Marketing</a>
 			<a href="">Twitter for Business</a>
 			<a href="">Developers</a>
-			<a href="">Directory</a>
-			<a href="">Settings</a>
+			<a href="https://twitter.com/i/directory/profiles">Directory</a>
+			<a href="https://twitter.com/settings/account/personalization"
+				>Settings</a
+			>
 			<p>&#9400; 2021 twitter, inc.</p>
 		</footer>
 	</body>
