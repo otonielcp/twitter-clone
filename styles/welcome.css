@@ -1,257 +1,123 @@
-/** @format */
+/**
+ * /* RESET
+ *
+ * @format
+ */
 
-* {
-	margin: 0;
-	padding: 0;
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
+body {
+	font-family: Verdana, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
 .container {
-	/* border: 2px solid red; */
-	flex-wrap: wrap;
-	width: 100%;
-	height: 95.3vh;
 	display: flex;
+	min-height: 100vh;
 }
 
-.image-container {
-	position: relative;
-	min-height: 90%;
-	flex: 0.6;
-}
-.image-container img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.left-side {
+	width: 55%;
 }
 
-.login-container {
-	background-color: black;
-	display: flex;
-	padding: 50px;
-	flex-direction: column;
-	justify-content: center;
-	flex: 0.4;
-	height: 100%;
-}
-
-.login-container img {
-	margin-bottom: 60px;
-	width: 40px;
-	height: 30px;
-}
-
-.login-container h1 {
-	color: #d9d9d9;
-	margin-bottom: 52px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 75px;
-}
-
-.login__h3 {
-	color: #d9d9d9;
-	margin-bottom: 25px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
-}
-
-.logo_image {
-	width: 100%;
-	height: 100%;
-}
-
-.logo-container {
-	z-index: 10;
-	top: 35%;
-	left: 35%;
-	right: 0;
-	bottom: 0;
-	position: absolute;
-	width: 355px;
-	height: 290px;
-}
-
-.login__Btn button {
-	padding: 15px 20px;
-	font-size: 15px;
-	font-weight: 700;
-	border: 1px solid #1da1f2;
-	border-radius: 30px;
-	width: 50%;
-	cursor: pointer;
-	transition: 0.4s;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-	-webkit-transition: 0.4s;
-	-moz-transition: 0.4s;
-	-ms-transition: 0.4s;
-	-o-transition: 0.4s;
-}
-
-.Btn-login__signup {
-	color: white;
-	margin-bottom: 21px;
-	background-color: #1da1f2;
-}
-
-.login__Btn .Btn-login__signup:hover {
-	background-color: rgba(29, 161, 242, 0.9);
-}
-
-.Btn-login__login {
-	color: #1da1f2;
-	border: 1px solid #1da1f2;
-	background-color: transparent;
-}
-
-.login__Btn .Btn-login__login:hover {
-	background-color: rgba(29, 161, 242, 0.1);
-}
-
-footer {
-	background-color: black;
-	padding: 15px 0px;
+.left-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	font-weight: 300;
-	font-size: 14px;
+	background: purple;
+	height: 100%;
+	background: url('../images/lohp_en_1302x955.png') no-repeat center
+		center/cover;
+}
+
+.left_twitter-logo {
+	width: 361px;
+}
+
+.right-side {
+	display: flex;
+	align-items: center;
+	width: 45%;
+	background: #000;
+	font-family: 'Times New Roman';
+}
+
+.right-content {
+	background: inherit;
+	margin-left: 2.375em;
+}
+
+.right_twitter-logo {
+	width: 39px;
+	margin-bottom: 3em;
+}
+
+.right-content h1,
+.right-content h2 {
 	color: #d9d9d9;
+	font-size: 4rem;
+	font-weight: 700;
 }
 
-footer a {
-	text-decoration: none;
-	padding: 0px 10px;
-	color: white;
-	font-weight: 300;
-	font-size: 14px;
-	color: #787879;
+.right-content h2 {
+	font-size: 1.94rem;
 }
 
-footer p {
-	color: #787879;
-}
-
-/* --------------------------------*/
-
-/* Modal starts here */
-
-.modal {
-	z-index: 100 !important;
-	background-color: rgba(0, 10, 0, 0.3) !important;
-}
-
-/* Full-width input fields */
-input[type='text'],
-input[type='password'] {
-	max-height: 62px !important;
-	margin-bottom: -500px;
-	width: 100%;
-	display: inline-block;
-	border: none;
-	background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type='text']:focus,
-input[type='password']:focus {
-	background-color: #ddd;
-	outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-	background-color: #04aa6d;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
+.right-content button {
+	width: 68%;
+	margin-bottom: 1.375em;
+	border: 1px solid #1da1f2;
+	border-radius: 30px;
+	padding: 1em 0;
 	cursor: pointer;
-	width: 100%;
-	opacity: 0.9;
+	font-size: 0.9375rem;
+	font-weight: 700;
 }
 
-button:hover {
-	opacity: 1;
+.signup-btn {
+	background: #1da1f2;
+	color: #fff;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-	padding: 14px 20px;
-	background-color: #f44336;
+.login-btn {
+	background: #000;
+	color: #1da1f2;
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,
-.signupbtn {
-	float: left;
-	width: 50%;
+.signup-btn:hover {
+	background: rgb(14, 157, 223);
 }
 
-/* Add padding to container elements */
-.container {
-	padding: 16px;
+.login-btn:hover {
+	background: rgba(29, 161, 242, 0.1);
 }
 
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+.footer {
+	position: fixed;
+	bottom: 0;
 	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: #474e5d;
-	padding-top: 50px;
+	width: 100%;
+	background: red;
+	padding: 0.75em 0;
+	text-align: center;
+	background: #000;
 }
 
-/* Modal Content/Box */
-.modal-content {
-	background-color: #fefefe;
-	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-	border: 1px solid #888;
-	max-width: 602px; /* Could be more or less, depending on screen size */
-	height: 653px;
+.footer a {
+	font-family: 'times New Roman', serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	color: #6e767d;
+	font-size: 0.9375rem;
+	margin: 0 0.35em;
 }
 
-/* Style the horizontal ruler */
-hr {
-	border: 1px solid #f1f1f1;
-	margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-	position: absolute;
-	right: 35px;
-	top: 15px;
-	font-size: 40px;
-	font-weight: bold;
-	color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-	color: #f44336;
-	cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-	content: '';
-	clear: both;
-	display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-	.cancelbtn,
-	.signupbtn {
-		width: 100%;
-	}
+.footer a:hover {
+	text-decoration: underline;
 }

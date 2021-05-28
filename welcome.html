@@ -1,124 +1,57 @@
 <!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta name="viewport" content="width=initial-scale=1.0" /> -->
+		<title>Twitter. It's what's happening</title>
 		<link rel="stylesheet" href="styles/welcome.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Document</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="image-container">
-				<img src="images/lohp_en_1302x955.png" alt="" />
-				<div class="logo-container">
-					<img class="logo_image" src="images/twttericon.png" alt="" />
+			<div class="left-side">
+				<div class="left-content">
+					<img
+						class="left_twitter-logo"
+						src="images/twttericon.png"
+						alt=""
+					/>
 				</div>
 			</div>
-			<div class="login-container">
-				<img
-					src="images/twttericon.png"
-					alt="Twitter Logo - White Twitter Logo"
-				/>
-				<h1 class="login__h1">Happening now</h1>
-				<h3 class="login__h3">Join Twitter today.</h3>
-				<div class="login__Btn">
-					<button
-						class="Btn-login__signup"
-						onclick="document.getElementById('id01').style.display='block'"
-						style="width: auto"
-					>
-						Sign up
-					</button>
-				</div>
-
-				<div id="id01" class="modal">
-					<span
-						onclick="document.getElementById('id01').style.display='none'"
-						class="close"
-						title="Close Modal"
-						>&times;</span
-					>
-
-					<form class="modal-content" action="/action_page.php">
-						<div class="container">
-							<h3>Create your account</h3>
-							<hr />
-							<!-- <label for="email"><b>Email</b></label> -->
-							<input
-								type="text"
-								placeholder="Enter Email"
-								name="email"
-								required
-							/>
-							<input
-								type="text"
-								placeholder="Name"
-								name="text"
-								required
-							/>
-							<div>
-								<label for="cars">Choose a car:</label>
-							<select id="cars" name="cars">
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="fiat">Fiat</option>
-								<option value="audi">Audi</option>
-							</select>
-							</div>
-							<label for="cars">Choose a car:</label>
-							<select id="cars" name="cars">
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="fiat">Fiat</option>
-								<option value="audi">Audi</option>
-							</select>
-							<div class="clearfix">
-								<button type="submit" class="signupbtn">Sign Up</button>
-							</div>
-						</div>
-					</form>
-				</div>
-
-				<div class="login__Btn">
-					<button class="Btn-login__login">Log in</button>
+			<div class="right-side">
+				<div class="right-content">
+					<img
+						class="right_twitter-logo"
+						src="images/twttericon.png"
+						alt=""
+					/>
+					<h1>Happening now</h1>
+					<h2>Join Twitter today.</h2>
+					<button class="signup-btn">Sign up</button>
+					<button class="login-btn">Log in</button>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<a href="https://about.twitter.com/">About</a>
-			<a href="https://help.twitter.com/en">Help Center</a>
-			<a href="https://twitter.com/en/tos">Terms of Service</a>
-			<a href="https://twitter.com/en/privacy"> Privacy Policy</a>
-			<a
-				href="https://help.twitter.com/en/rules-and-policies/twitter-cookies"
-				>Cookie Policy</a
-			>
-			<a
-				href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html"
-				>Ads info</a
-			>
-			<a href="https://blog.twitter.com/">blog</a>
-			<a href="https://status.twitterstat.us/">Status</a>
-			<a href="https://careers.twitter.com/">Careers</a>
-			<a href="">Brand resources</a>
-			<a href="https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise">
-				Advertising</a
-			>
-			<a href="https://marketing.twitter.com/en">Marketing</a>
+		<footer class="footer">
+			<a href="">About</a>
+			<a href="">Help Center</a>
+			<a href="">Terms of Service</a>
+			<a href="">Privacy Policy</a>
+			<a href="">Cookie Police</a>
+			<a href="">Ads info</a>
+			<a href="">Blog</a>
+			<a href="">Status</a>
+			<a href="">Careers</a>
+			<a href="">Brand Resources</a>
+			<a href="">Advertising</a>
+			<a href="">Marketing</a>
 			<a href="">Twitter for Business</a>
 			<a href="">Developers</a>
-			<a href="https://twitter.com/i/directory/profiles">Directory</a>
-			<a href="https://twitter.com/settings/account/personalization"
-				>Settings</a
-			>
-			<p>&#9400; 2021 twitter, inc.</p>
+			<a href="">Directory</a>
+			<a href="">Settings</a>
+			<a href="">&copy; 2021 Twitter, Inc.</a>
 		</footer>
 	</body>
 </html>
